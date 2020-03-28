@@ -1,26 +1,7 @@
 <!Doctype Html>
 <html lang=zh-cn>
 <head>
-<script>
-function clear(){
-Source=document.body.firstChild.data;
-document.open();
-document.close();
-document.title=”看不到源代码”;
-document.body.innerHTML=Source;
-}
-</script>
-<script>
-function   document.onmousedown()
-{
-      if(event.button==2||event.button==3)
-      {
-            alert( “右健被禁止”)
-            return   false
-        }
 
-}
-</script>
 <script>
 function createCode() {
     code = "";
@@ -47,20 +28,9 @@ function createCode() {
         ctx.strokeText(code,5,20);//画布上添加验证码
     }
 }
-</script>
 <title>验证</title>
 <body>
 <canvas id="myCanvas" width="70px" height="27px" style="float: right; border:1px solid #d3d3d3;"></canvas>
-<script language=javascript>
-function click() {
-alert(‘对不起,您不能保存此图片,谢谢您的理解和支持!’) }
-function click1() {
-if (event.button==2) {alert(‘对不起,您不能保存此图片,谢谢您的理解和支持!’) }}
-function CtrlKeyDown(){
-if (event.ctrlKey) {alert(‘不当的拷贝将损害您的系统！’) }}
-document.οnkeydοwn=CtrlKeyDown;
-document.onselectstart=click;
-document.οnmοusedοwn=click1;
-</srcipt>
 <a href="javascript" onclick="SetHome(this,window.location)">设为首页</a>
 <a href="javascript" onclick="AddFavorite(window.location,document.title)">设为收藏</a>
+</body>
